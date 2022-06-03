@@ -58,6 +58,15 @@ header .slogan {
   padding-left: 1.5rem;
 }
 
+.lang .eng {
+  border-left: 2px solid #FF790A;
+  padding-left: 10px;
+}
+
+.lang .ua {
+  padding-right: 10px;
+}
+
 header .hero {
   margin-top: 6rem;
   display: flex;
