@@ -141,3 +141,8 @@ section.about {
   align-items: center;
   min-height: 100vh;
 }
+
+.about-text {
+  max-width: 35vw;
+  margin-left: 8rem;
+}
