@@ -1,8 +1,18 @@
+:root {
+  --orange: #FF790A;
+  --gray: #DADADA;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+}
+
+.wrap {
+  width: 90vw;
+  margin: 0 auto;
 }
 
 header {
@@ -54,12 +64,12 @@ header .top .right {
 
 header .slogan {
   color: white;
-  border-left: 2px solid #FF790A;
+  border-left: 2px solid var(--orange);
   padding-left: 1.5rem;
 }
 
 .lang .eng {
-  border-left: 2px solid #FF790A;
+  border-left: 2px solid var(--orange);
   padding-left: 10px;
 }
 
@@ -98,7 +108,7 @@ header .hero {
 }
 
 .item .icon {
-  border: 2px solid #FF790A;
+  border: 2px solid var(--orange);
   padding: 10px;
   border-radius: 10px;
   width: 3.5rem;
@@ -124,7 +134,7 @@ p.after-icon {
 button.lead {
   margin-top: 6rem;
   color: white;
-  background-color: #FF790A;
+  background-color: var(--orange);
   padding: 12px;
   border-radius: 10px;
   border: none;
@@ -145,4 +155,30 @@ section.about {
 .about-text {
   max-width: 35vw;
   margin-left: 8rem;
+}
+
+section.features {
+  background: var(--gray);
+}
+
+.features .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.features .item img {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid var(--orange);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+p.after-num {
+  position: absolute;
+  left: 4.2rem;
+  font-size: 10px;
 }
